@@ -63,10 +63,22 @@ LLM7_API_KEY=your_free_token     # Enhanced limits
 
 ---
 
-**ToDo: Improving UI**
+### About the GUI
+
+This is the chosen pallete:
+
+![#0B3D0B](https://img.shields.io/badge/-%230B3D0B-0B3D0B?style=for-the-badge&logoColor=white)
+![#145214](https://img.shields.io/badge/-%23145214-145214?style=for-the-badge&logoColor=white)
+![#1E6B1E](https://img.shields.io/badge/-%231E6B1E-1E6B1E?style=for-the-badge&logoColor=white)
+![#2E8B2E](https://img.shields.io/badge/-%232E8B2E-2E8B2E?style=for-the-badge&logoColor=white)
+![#45A845](https://img.shields.io/badge/-%2345A845-45A845?style=for-the-badge&logoColor=white)
+![#6BCF6B](https://img.shields.io/badge/-%236BCF6B-6BCF6B?style=for-the-badge&logoColor=white)
+![#A8E6A8](https://img.shields.io/badge/-%23A8E6A8-A8E6A8?style=for-the-badge&logoColor=black)
+![#DFF8DF](https://img.shields.io/badge/-%23DFF8DF-DFF8DF?style=for-the-badge&logoColor=black)
 
 
 
 By [Eduardo J. Barrios](https://edujbarrios.com)
+
 
 
