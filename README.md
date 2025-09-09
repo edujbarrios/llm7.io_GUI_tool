@@ -36,9 +36,8 @@ LLM7.io GUI is a conversational web interface that allows you to:
 - **Cross-platform scripts** - Works on Windows, Linux, and Mac
 
 ---
-````bash
 ### ⚡ Fast Setup
-
+````bash
 # 1. Install dependencies
 pip install -r requirements.txt
 
@@ -64,5 +63,6 @@ LLM7_API_KEY=your_free_token     # Enhanced limits
 ```
 
 ---
+
 
 By [Eduardo J. Barrios](https://edujbarrios.com)
