@@ -3,8 +3,7 @@
 A modern and elegant graphical interface for interacting with **llm7.io** AI models using **Chainlit**.
 
 **![STILL ON DEVELOPMENT](https://img.shields.io/badge/STILL%20ON%20DEVELOPMENT-0345fc?style=for-the-badge)**
-
-**ToDo: Improving UI**
+**![ToDo: Improving UI](https://img.shields.io/badge/ToDo:%20IMPROVING%20UI-a903fc?style=for-the-badge)**
 
 ⭐ **Like the project?** Give it a star on GitHub!
 
@@ -64,6 +63,10 @@ LLM7_API_KEY=your_free_token     # Enhanced limits
 
 ---
 
+**ToDo: Improving UI**
+
+
 
 By [Eduardo J. Barrios](https://edujbarrios.com)
+
 
