@@ -1,0 +1,350 @@
+# LLM7.io Configuration File
+
+# API Configuration
+api:
+  base_url: "https://llm7.io/v1"
+  timeout: 30
+  retries: 3
+  # API Key Options:
+  # - "unused": Basic access without tokens (some limitations)
+  # - Free token: Get from https://token.llm7.io for enhanced limits
+  # - Paid key: Premium access with full features
+
+# Application Settings
+app:
+  name: "LLM7.io GUI"
+  description: "Graphical interface for interacting with llm7.io models"
+  version: "1.0.0"
+  enable_telemetry: false
+  session_timeout: 3600
+
+# Default Model Settings
+defaults:
+  model: "gemini"
+  temperature: 0.7
+  max_tokens: 1000
+  stream: false
+
+# UI Configuration
+ui:
+  theme: "dark"
+  show_model_info: true
+  show_token_usage: true
+  default_collapse_content: true
+  default_expand_messages: false
+
+# Available Models Configuration
+models:
+  # Bedrock Models
+  - id: "deepseek-r1-0528"
+    owned_by: "bedrock"
+    modalities: ["text"]
+    description: "DeepSeek R1 model optimized for reasoning tasks"
+    category: "reasoning"
+    
+  - id: "nova-fast"
+    owned_by: "bedrock"
+    modalities: ["text"]
+    description: "Fast inference model for quick responses"
+    category: "general"
+    
+  - id: "roblox-rp"
+    owned_by: "bedrock"
+    modalities: ["text"]
+    description: "Specialized model for Roblox role-playing scenarios"
+    category: "gaming"
+
+  # API Navy Models
+  - id: "gemini"
+    owned_by: "api.navy"
+    modalities: ["text"]
+    description: "Google's Gemini model for general conversations"
+    category: "general"
+    
+  - id: "gpt-o4-mini-2025-04-16"
+    owned_by: "api.navy"
+    modalities: ["text"]
+    description: "OpenAI GPT-4 optimized mini version"
+    category: "general"
+
+  # Scaleway Models
+  - id: "mistral-small-3.1-24b-instruct-2503"
+    owned_by: "scaleway"
+    modalities: ["text"]
+    description: "Mistral Small 3.1 24B instruction-tuned model"
+    category: "instruction"
+    
+  - id: "qwen2.5-coder-32b-instruct"
+    owned_by: "scaleway"
+    modalities: ["text"]
+    description: "Qwen2.5 Coder 32B specialized for programming tasks"
+    category: "coding"
+
+  # Azure Models
+  - id: "gpt-4o-mini-2024-07-18"
+    owned_by: "azure"
+    modalities: ["text", "image"]
+    description: "GPT-4 Omni mini with multimodal capabilities"
+    category: "multimodal"
+    
+  - id: "gpt-4.1-nano-2025-04-14"
+    owned_by: "azure"
+    modalities: ["text", "image"]
+    description: "GPT-4.1 nano version with image support"
+    category: "multimodal"
+    
+  - id: "bidara"
+    owned_by: "azure"
+    modalities: ["text", "image"]
+    description: "Specialized multimodal model"
+    category: "multimodal"
+    
+  - id: "mirexa"
+    owned_by: "azure"
+    modalities: ["text", "image"]
+    description: "Advanced multimodal reasoning model"
+    category: "multimodal"
+    
+  - id: "rtist"
+    owned_by: "azure"
+    modalities: ["text"]
+    description: "Creative text generation model"
+    category: "creative"
+
+  # Mistral Models
+  - id: "mistral-large-2411"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Large model for complex reasoning"
+    category: "reasoning"
+    
+  - id: "mistral-large-2402"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Large February 2024 version"
+    category: "reasoning"
+    
+  - id: "mistral-large-2407"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Large July 2024 version"
+    category: "reasoning"
+    
+  - id: "mistral-medium"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Medium balanced performance model"
+    category: "general"
+    
+  - id: "mistral-saba-2502"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Saba specialized model"
+    category: "specialized"
+    
+  - id: "mistral-small-2402"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Small February 2024 version"
+    category: "general"
+    
+  - id: "mistral-small-2409"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Small September 2024 version"
+    category: "general"
+    
+  - id: "mistral-small-2501"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Small January 2025 version"
+    category: "general"
+    
+  - id: "mistral-small-2503"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Mistral Small March 2025 version"
+    category: "general"
+    
+  - id: "codestral-2405"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Codestral May 2024 for code generation"
+    category: "coding"
+    
+  - id: "codestral-2501"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Codestral January 2025 for code generation"
+    category: "coding"
+    
+  - id: "ministral-3b-2410"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Ministral 3B compact model"
+    category: "compact"
+    
+  - id: "ministral-8b-2410"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Ministral 8B balanced compact model"
+    category: "compact"
+    
+  - id: "open-mistral-7b"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Open Mistral 7B base model"
+    category: "open-source"
+    
+  - id: "open-mistral-nemo"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Open Mistral Nemo specialized model"
+    category: "open-source"
+    
+  - id: "open-mixtral-8x22b"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Open Mixtral 8x22B mixture of experts"
+    category: "open-source"
+    
+  - id: "open-mixtral-8x7b"
+    owned_by: "mistral"
+    modalities: ["text"]
+    description: "Open Mixtral 8x7B mixture of experts"
+    category: "open-source"
+    
+  - id: "pixtral-12b-2409"
+    owned_by: "mistral"
+    modalities: ["text", "image"]
+    description: "Pixtral 12B multimodal model"
+    category: "multimodal"
+    
+  - id: "pixtral-large-2411"
+    owned_by: "mistral"
+    modalities: ["text", "image"]
+    description: "Pixtral Large multimodal model"
+    category: "multimodal"
+
+  # Nebulablock Models
+  - id: "deepseek-v3-0324"
+    owned_by: "nebulablock"
+    modalities: ["text"]
+    description: "DeepSeek V3 March 2024 version"
+    category: "reasoning"
+    
+  - id: "deepseek-r1"
+    owned_by: "nebulablock"
+    modalities: ["text"]
+    description: "DeepSeek R1 reasoning model"
+    category: "reasoning"
+    
+  - id: "l3.3-ms-nevoria-70b"
+    owned_by: "nebulablock"
+    modalities: ["text"]
+    description: "Llama 3.3 MS Nevoria 70B specialized model"
+    category: "specialized"
+    
+  - id: "midnight-rose-70b-v2.0.3"
+    owned_by: "nebulablock"
+    modalities: ["text"]
+    description: "Midnight Rose 70B creative model"
+    category: "creative"
+    
+  - id: "l3-70b-euryale-v2.1"
+    owned_by: "nebulablock"
+    modalities: ["text"]
+    description: "Llama 3 70B Euryale specialized model"
+    category: "specialized"
+    
+  - id: "l3-8b-stheno-v3.2"
+    owned_by: "nebulablock"
+    modalities: ["text"]
+    description: "Llama 3 8B Stheno compact model"
+    category: "compact"
+
+  # Nebius Models
+  - id: "qwen2.5-coder-7b"
+    owned_by: "nebius"
+    modalities: ["text"]
+    description: "Qwen2.5 Coder 7B for programming tasks"
+    category: "coding"
+
+# Model Categories
+categories:
+  general:
+    name: "General Purpose"
+    description: "Models suitable for general conversations and tasks"
+    
+  reasoning:
+    name: "Reasoning"
+    description: "Models optimized for complex reasoning and problem-solving"
+    
+  coding:
+    name: "Code Generation"
+    description: "Models specialized for programming and code-related tasks"
+    
+  multimodal:
+    name: "Multimodal"
+    description: "Models that can process both text and images"
+    
+  creative:
+    name: "Creative"
+    description: "Models optimized for creative writing and content generation"
+    
+  instruction:
+    name: "Instruction Following"
+    description: "Models fine-tuned to follow instructions precisely"
+    
+  compact:
+    name: "Compact"
+    description: "Smaller models optimized for efficiency"
+    
+  open-source:
+    name: "Open Source"
+    description: "Open source models available for community use"
+    
+  specialized:
+    name: "Specialized"
+    description: "Models with specific domain expertise"
+    
+  gaming:
+    name: "Gaming"
+    description: "Models specialized for gaming and role-playing scenarios"
+
+# Provider Information
+providers:
+  mistral:
+    name: "Mistral AI"
+    description: "French AI company focused on open and efficient models"
+    website: "https://mistral.ai"
+    
+  azure:
+    name: "Microsoft Azure"
+    description: "Microsoft's cloud AI platform"
+    website: "https://azure.microsoft.com"
+    
+  bedrock:
+    name: "Amazon Bedrock"
+    description: "Amazon's managed AI service"
+    website: "https://aws.amazon.com/bedrock"
+    
+  nebulablock:
+    name: "NebulaBlock"
+    description: "Specialized AI model provider"
+    website: "https://nebulablock.ai"
+    
+  scaleway:
+    name: "Scaleway"
+    description: "European cloud provider with AI services"
+    website: "https://www.scaleway.com"
+    
+  "api.navy":
+    name: "API Navy"
+    description: "API aggregation service"
+    website: "https://api.navy"
+    
+  nebius:
+    name: "Nebius"
+    description: "AI infrastructure and model provider"
+    website: "https://nebius.ai"
